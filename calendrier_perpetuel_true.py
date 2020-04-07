@@ -50,7 +50,7 @@ def get_year(a): # crée un dictionnaire représentant les mois de l'année a et
 
 def jour_date(j,m,a):
     annee = get_year(a)
-    assert m in annee and j in annee[m], "La date rentrée est incorrecte"
+    assert m in annee and j in range(1,annee[m]+1), "La date rentrée est incorrecte"
 
     J,M,A = 21,8,1995 # date de référence: lundi
     ANNEE = get_year(A)
