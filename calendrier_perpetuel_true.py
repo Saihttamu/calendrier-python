@@ -27,7 +27,7 @@ def bissextile(a):
         return (a+1)%4==0 and a%100!=0 or a%400==0
 
 
-def get_(a): # crée un dictionnaire représentant les mois de l'année a et leur nombre de jours correspondant
+def get_year(a): # crée un dictionnaire représentant les mois de l'année a et leur nombre de jours correspondant
     assert a != 0, "L'année zéro n'existe pas!"
     assert type(a)==int, "Format d'année invalide: l'année doit être un entier"
     
